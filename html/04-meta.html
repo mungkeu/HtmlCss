@@ -1,0 +1,49 @@
+<!DOCTYPE html>     <!-- 문서 선언 html5 -->
+<html lang="en">    <!-- 언어 지정. -->
+<head>
+    <meta charset="UTF-8">  <!-- 문자코드 셋, title보다 먼저 작성해야 한다. 필수 메타 태그.-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--IE는 버전마다 같은 웹 문서여도 다르게 보인다. 해당 태그를 작성하면 IE의 가장 최신 표준 모드를 선택한다.-->
+    <meta name="keywords" content=""> <!-- 이 웹페이지에서 대표되는 단어들을 쉼표로 나열한다.-->
+    <meta name="description" content=""> <!-- 이 문서에 대한 설명 구글에서는 키워드는 별로지만 디스크립션은 검색에 활용한다.-->
+    <meta name="author" content=""> <!-- 누가 만들었는지 -->
+    <meta name="generator" content=""> <!-- vscode 작성한 도구나 bootstrap3와 같이 프레임워크에 대한 작성-->
+    <meta name="robots" content="index,follow"> <!-- 검색이 되도록 하기 위해서 사용 두가지 index(현재 페이지 기준으로), follow(연결된 페이지 기준으로)
+    즉 구글의 검색 봇이 항상 돌아다니며 인터넷에 연결된 검색정보들을 수집할때 수집을 허용하도록 하기위해서 사용, 항상 허용하는게 좋다. 보안과는 관련없다.-->
+    <!--
+        all : 모두 허용
+        index, follow : 모두 허용
+        index, nofollow : index만 허용
+        noindex, follow : follow만 허용
+        none : 모두 허용하지 않는다
+        메타태그가 아닌 robots.txt로 따로 관리해도 된다.
+    -->
+    <!-- 
+        opengraph 
+        - 카카오톡 또는 여러 소셜과 같은 sns에서 사이트 url 전송시
+          이미지가 뜨면서 제목과 이미지 설명 등이 뜨는데 그것을 지정한다.
+    -->
+    <meta property="og:title" content="페이지 제목">
+    <meta property="og:url" content="http://사이트주소/">
+    <meta property="og:image" content="http://띄울이미지">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="사이트설명">
+    <!--
+        트위터에 대응한 설정
+    -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="사이트제목">
+    <meta name="twitter:url" content="http://사이트주소/">
+    <meta name="twitter:image" content="http://띄울이미지">
+    <meta name="twitter:description" content="사이트설명">
+    <!-- 반응형 지정 (모바일 등)-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> <!-- width(너비)는 디바이스의 너비를 따름,기본 배율은 1-->
+    <!--
+        사이트 점검중이나 문제가 있을때 일정 시간 이후 이동시키는 메타태그
+        <meta http-equiv="refresh" content="3; url=http://naver.com/"> 3초 후 해당 url로 이동한다. 
+    --> 
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

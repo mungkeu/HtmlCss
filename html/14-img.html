@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img</title>
+    <style>
+        .desc{
+            width: 452px;
+            height: 640px;
+            background: url(/img/tower.jpg);
+            text-indent: -9999em; /*그림뒤에 내용을 숨긴다.*/
+        }
+    </style>
+</head>
+<body>
+    <h1>img</h1>
+    <p><img src="/img/tower.jpg" alt="탑"></p> 
+    <!-- 
+        src와 alt 필수이며 src 경로가 잘못되거나 문제가 있으면 alt의 내용이 대신 보여진다.
+        또한 음성지원도 alt를 들려준다.
+
+        단, 블릿 즉 리스트 앞에 * 같은 이미지는 딱히 alt가 없으미로 비워도 되지만 속성을 안적으면 안되고
+        <img src="/img/test.jpg" alt=""> 이렇게 속성은 적고 값만 비워둔다.
+        
+        art 입력 방법
+        - 그림에 보여지는 글자를 그대로 입력한다.
+        - 텍스트 이미지의 경우에도 텍스트 내용을 그대로 입력한다.
+        - 예전에는 글이 길면 alt는 대표 단어를 넣고 title에 내용을 넣었지만 요즘은 그냥 alt에 넣는다.
+        - 약도의 경우에는 가는 길을 적어준다. 지하철3호선 안국역 1번출구 나와서 50미터 전방 아름다운가게본부
+        - longdesc="test.html" 속성의 경우 여러 가지 내용이 함께있는 경우 즉 회사의 정신 방향 도전 이있고 각 내용이 있을때와 같을경우 사용
+        - 즉 롱디스크로 연결한 html에 해당 내용들을 정리해서 넣어두면 된다.
+        <img src="/img/tower.jpg" alt="우리회사 정신" longdesc="data/desc.html">
+        - 사실 롱디스크는 이제 거의 사용하지 않고 css를 사용한다.
+    -->
+    <hr>
+    <!-- 롱디스크를 쓰지않고 아래와 같이 내용을 구조로 만들고 css로 이미지를 준다. -->
+    <div class="desc">
+        <h1>운동철학</h1>
+        <ul>
+
+        </ul>
+    </div>
+
+</body>
+</html>

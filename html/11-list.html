@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ul, ol, li, dl, dt, dd</title>
+</head>
+<body>
+    
+<!-- 
+    - ul : 순서가 없는 리스트
+    - ul 안에는 li만와야한다.
+    - 그러나 li 안에는 거의 모든 태그가 올 수 있다.
+-->
+<ul>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+</ul>
+
+<!--
+    - ol : 순서가 있는 리스트
+-->
+<ol>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+</ol>
+
+<ol type="i"><!-- a, A, i 등 가능.-->
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+</ol>
+
+<hr>
+<!-- 서브메뉴 생성 방법-->
+<ul>
+    <li>
+        <a href="#">menu 1</a>
+        <ul>
+            <li><a href="#">submenu 1</a></li>
+            <li><a href="#">submenu 2</a></li>
+            <li><a href="#">submenu 3</a></li>
+            <li><a href="#">submenu 4</a></li>
+        </ul>
+    </li>
+    <li><a href="#">menu 2</a></li>
+    <li><a href="#">menu 3</a></li>
+    <li><a href="#">menu 4</a></li>
+</ul>
+<hr>
+<dl><!-- 제목 내용 제목 내용의 구조-->
+    <dt><strong>ipsum dolor sit.</strong></dt><!-- dt안에는 인라인 태그만 올 수 있다. 블록태그 x-->
+    <dd><!-- p태그와 같은 블록태그도 올 수 있다.-->
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat dolorum harum quas alias consectetur similique ad, 
+            praesentium libero cupiditate earum laborum? 
+            Corporis dignissimos consequuntur repellat non, natus expedita iste voluptas!
+        </p>
+    </dd>
+    <dt><strong>ipsum dolor sit.</strong></dt>
+    <dd>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat dolorum harum quas alias consectetur similique ad, 
+            praesentium libero cupiditate earum laborum? 
+            Corporis dignissimos consequuntur repellat non, natus expedita iste voluptas!
+        </p>
+    </dd>
+</dl>
+
+<dl><!-- 용어는 하나인데 설명이 여러개인 것은 가능하다.-->
+    <dt>Lorem, ipsum dolor.</dt>
+    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</dd>
+    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</dd>
+    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</dd>
+</dl>
+
+<dl><!-- 용어가 여러개인데 설명이 하나인 것은 불가능하다.-->
+    <dt>Lorem, ipsum dolor.</dt>
+    <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</dt>
+    <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</dt>
+    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</dd>
+</dl>
+
+<dl><!--dl로 메뉴를 만드는것은 옳지 않다. dl안에 dt만 있거나 dd만 있으면 안된다.-->
+    <dt>menu</dt>
+    <dt>menu</dt>
+    <dt>menu</dt>
+</dl>
+<!-- 
+    서브메뉴가 있다하면 가능은 하지만 만들지말자. 
+    왜냐하면 서브메뉴가 어떤건 있고 어떤건 없는 경우가 많기때문에 그냥 ul을 쓴다.
+-->
+</body>
+</html>

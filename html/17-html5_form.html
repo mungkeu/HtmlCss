@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html5 form</title>
+</head>
+<body>
+    <form action="#" method="post"> <!-- novalidate를 적용시 html5에 적용된 문법검증을 하지않는다.-->
+        <fieldset>
+            <legend>html5 form</legend>
+            <p>
+                <label for="username">이름</label>
+                <input type="text" id="username" name="username" value="" 
+                placeholder="user name" autofocus="autofocus" required="required" autocomplete="on"> 
+                <!-- 
+                    disabled="disabled" : disabled는 사용하지 못하게 한다. 
+                    placeholder="user name" : hint를 준다. 
+                    autofocus="autofocus" : 설정된 곳에서 커서가 깜박인다. 하나만 지정가능.
+                    required="required" : 필수입력항목으로 지정한다. 입력하지않으면 경고문구가 뜬다.
+                    autocomplete="off" : 자동완성을 끈다. 디폴트가 on으로 켜져있다.
+                -->
+            </p>
+            <p>
+                <label for="useremail">이메일</label>
+                <input type="email" name="useremail" id="useremail" value="" placeholder="useremail@email.com" required="required"><!-- text와 같지만 특수 기능 포함. @빼먹으면 알려준다.-->
+            </p>
+            <p>
+                <label for="userurl">웹사이트</label>
+                <input type="url" id="userurl" name="userurl" value="">
+            </p>
+            <p>
+                <label for="order">주문수량</label>
+                <input type="number" id="order" name="order" min="1" max="20" value=""> <!-- value는 초기값-->
+                <span>개</span>
+            </p>
+            <p>
+                <label for="userrange"></label>
+                <input type="range" id="userrange" name="userrange" min="0" max="100" step="10" value="30"> <!-- value는 초기값, step만큼 이동 -->
+            </p>
+            <p>
+                <label for="userdate">제출</label>
+                <input type="date" id="userdate" name="userdate" min="2017-09-10" max="2017-09-20" value="2017-09-12"> <!--min: 시작일, max: 종료일-->
+            </p>
+            <p>
+                <label for="usercolor">색상선택</label>
+                <input type="color" name="usercolor" id="usercolor" value="#11b815">
+            </p>
+            <p>
+                <label for="usertel">연락처</label>
+                <input type="tel" name="usertel" id="usertel" value="">
+            </p>
+        </fieldset>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>

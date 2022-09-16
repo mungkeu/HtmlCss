@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>h1~h6, p, address, blockquote, hr, pre</title>
+</head>
+<body>
+    <h1>heading 1</h1> <!-- 로고, 본문 제목 -->
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+    <hr> <!-- 이전 내용과는 다른 내용이 나올때 사용한다. -->
+    <p> <!-- 단락 -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, 
+        libero maiores quae ducimus vero quod ut nesciunt itaque fugit non, 
+        explicabo culpa tenetur suscipit facere dignissimos impedit! Nam, modi eligendi.
+    </p>
+    <address>대구광역시 동구 첨단로 53 (41068) 디지털문화본부</address><!--p는 허용 나머지는 안됨-->
+    <hr>
+    <!-- 인용문, 인용문은 많은게 들어갈수 있어 p같은 블록태그가 여러개 들어갈 수 있다. p안에 p가 또 들어갈수없다.-->
+    <blockquote cite="해당 저작물 url" title="요약문장"> <!-- title은 소리로 들을때 다듣지 않아도 되어서 좋다. -->
+        <p>집안이 화목하면 모든 일이 잘 이루어진다는 것을 뜻하는 한자성어. 家 : 집 가 和 : 화할 화 萬 : 일만 만 事 : 일 사 成 : 이룰 성 모든 일은 
+            가정에서부터 비롯된다는 말이다. 가정은 공동생활이 이루어지는 최소 단위이자, 사회생활의 출발점이다. 
+            따라서 공동체의 근간인 가정이 화목하지 않으면 가족 구성원 사이에 갈등이 생기고, 의심하고 미워하는 마음이 일어나 결국 서로.</p>
+        <p>
+            [한자 뜻과 음] 집 가, 화목할 화, 일만 만, 일 사, 이룰 성. [풀이] 집안이 화목하면 모든 일이 잘되어 나감. [유래 및 용례] 이 말은 ‘笑門萬福來(소문만복래)’와 
+            대를 이루어 잘 쓰이는 말이다.집안이 화목하려면 여유와 웃음이 있어야 한다.
+        </p>
+    </blockquote>
+    <!-- html5에 추가된 footer-->
+    <footer>출처 : <cite><a href="www.naver.com">웹 접근성 연구소 &gt; 웹 접근성이란 ?</a></cite></footer>
+    <hr>
+    <!-- p와 다르게 코드상에서 표현한 모양을 그대로 보여준다. 코드를 보여줄때 많이 사용한다.-->
+    <pre>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ex, fugiat odit ut atque ab dolorum placeat iusto cumque necessitatibus accusantium a maiores obcaecati aut! 
+        Vel voluptatem cumque consequuntur delectus eligendi?
+    </pre>
+    <pre><!-- 들여쓰기도 인식하지만 css에서 조절하면 된다. 폰트도 바뀌지만 css로 바꾸면 된다.-->
+        &lt;h1&gt;heading 1&lt;/h1&gt; 
+        &lt;h2&gt;heading 2&lt;/h2&gt;
+        &lt;h3&gt;heading 3&lt;/h3&gt;
+        &lt;h4&gt;heading 4&lt;/h4&gt;
+        &lt;h5&gt;heading 5&lt;/h5&gt;
+        &lt;h6&gt;heading 6&lt;/h6&gt;
+    </pre>
+</body>
+</html>

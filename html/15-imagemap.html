@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image map</title>
+</head>
+<body>
+    <h1>이미지맵</h1>
+    <p><a href="#"><img src="/img/map.gif" alt=""></a></p> <!--이렇게 링크를 걸면 링크가 1개만 걸린다.-->
+
+    <!--
+        - 이미지 위에 원하는 형태로 여러개의 링크를 걸고 싶을때
+        - 즉 지도에서 마우스 올리면 지역별로 체크가 가능하게 할때 사용한다.
+        - name과 id는 html 버전에 따라 동일하므로 안전하게 둘다 적는다.
+        - 이 후 img에 usemap 값으로 #뒤에 name,id와 동일한 이름을 적어주면 연결된다.
+        
+        area 속성
+        1. shape : rect(사각형)), circle(원형), poly(다각형)
+        2. coords : 영역 지정(좌표를 적어준다.), 포토샵 같은 프로그램으로 좌표확인 필요
+            - rect : 좌 상단 좌표(x,y), 우 하단 좌표(x,y)
+            - circle : 중심 좌표(x,y), 반지름
+            - poly : 순서 상관없이 다각형의 좌표를 모두 적어준다. 해당 예제는 좌표6개(x,y)가 필요
+        3. href : 이동할 주소
+        4. alt : 설명
+    -->
+    <p>
+        <img src="/img/map.gif" usemap="#map" alt="">
+        <map name="map" id="map">
+            <area shape="rect" coords="15,25,218,84" href="http://naver.com/" alt="naver"> 
+            <area shape="circle" coords="308,55,50" href="http://daum.net/" alt="daum">
+            <area shape="poly" coords="550,34,570,48,570,65,550,78,532,65,532,48" href="http://nate.com/" alt="nate">
+        </map>
+    </p>
+</body>
+</html>
