@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>css basic</title>
+    <style>
+        body{
+            background: url(/img/photo.jpg);
+        }
+        h1{
+            /* color: red; */
+            /* color: #ff0000; #레드그린블루 #rrggbb */
+            /* color:#f00; 두개의 짝(단어)이 맞으면 하나는 생략가능 */
+            /* color:rgb(255,0,0); */
+            /* color: rgb(100%,0%,0%); */
+            /* color: hsl(0,100%,50%); 색상 채도 밝기 Html5에 추가 */
+            /* color: rgba(255,0,0,.6); 레드 그린 블루 투명도(0.0) 앞에 0은 생략가능 */
+            /* color:rgba(255,0,0,.4); */
+            /* color: hsla(0, 100%, 50%, .4); */
+            color:#ff0000;
+            font-size: 10em; /* 1em이 한글자의 크기 10배로 키워본다.*/
+        }
+        html{
+            font-size: 20px; /* html의 글자 크기를 올리면 rem의 크기도 커진다. 20px * 50rem */
+        }
+        p{
+            /*
+                px : 1픽셀을 1로하는 단위, 모니터 해상도에 상대적
+                em : 폰트의 높이를 1로 하는 단위, 글자 크기에 따라 상대적
+                %  : 기준이 되는 크기에 대한 비율, 브라우저의 50% 정확히는 감싸는 대상의 50%이다.
+                rem : 루트인 html의 값을 기준으로 계산, r -> root(html) html이 기준이므로 html에 지정한 글자사이즈를 곱한다.
+            */
+            /* width: 500px; */
+            /* width: 50em; */
+            /* width: 50%; */
+            width: 50rem;
+            font-size: 24px;/* 글자 크기를 올리면 em도 커진다. 24px * 50em */
+            background-color: lime;
+            
+        }
+    </style>
+</head>
+<body>
+<h1>css basic</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo suscipit quibusdam magni ut non ullam sint impedit, natus voluptas voluptate? Dolores ut minima eligendi illum distinctio iste possimus consequatur facilis!
+Voluptatem ducimus eos sint quaerat aliquam? Ut vitae molestiae deleniti. Ab facere saepe distinctio hic vel ad, at possimus, perspiciatis ipsa et eos eligendi. Quaerat impedit possimus quidem assumenda odit?
+Quos temporibus corporis tempore ullam aliquam aut suscipit, minima iusto debitis culpa repellendus illo blanditiis perspiciatis minus dignissimos odio in ratione, animi nam! Id amet asperiores nostrum ab. Quibusdam, expedita.
+Iusto nostrum quia sapiente a ut, consectetur sit quaerat optio! Et soluta dolorem numquam possimus nobis commodi quo distinctio cupiditate ipsa quam necessitatibus quae at, natus aspernatur eos ad optio.</p>
+</body>
+</html>

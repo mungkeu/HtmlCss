@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>css basic</title>
+    <style>
+        body{
+            color:#333;
+        }
+        a{
+            color:#888;
+            text-decoration: none;;
+        }
+        a:hover, a:active, a:focus{
+            color:red;
+            text-align: underline;
+        }
+        .lead:first-line{ /* 해당 클래스 선택자를 가진 태그의 첫번째 라인, 길어지든 줄어들든 첫라인만 적용*/
+            background-color: lime;
+        }
+        .lead::first-letter{ /* 첫 번째 글자만 바꾼다.*/
+            font-size:5em;
+        }
+        h1:before{ /* h1 태그 시작 바로 옆, 위치만 주지만 안에 무엇인가 넣어줄 수 있다.*/
+            content: 'Before area '; /* 해당 텍스트가 h1태그 시작지점에 적용된다.*/
+            color:blue;
+        }
+        h1:after{ /* h1 태그 종료 바로 옆*/
+            content: ' After area'; /* 해당 텍스트가 h1태그 종료지점에 적용된다.*/
+            color: red;
+        }
+        div{ background-color: lime; color: white;}  /*type, 우선순위: 1*/
+        .sample{background-color: green;} /* 태그 보다 클래스가 우선. class, 우선순위: 10*/
+        .sample{background-color: red;} /* 만일 우선순위가 같으면 나중에 적용한 것을 적용 */
+        #sample{background-color: purple;}/* id, 우선순위: 100*/
+        div#sample.sample{background-color: blue;} /* 111점이므로 우선해서 적용 */
+
+        div{background-color:darkred !important;} /* 모든 우선순위 무시하고 적용 : !important */
+    </style>
+</head>
+<body>
+    <h1>css selector</h1>
+    <p class="lead"><a href="http://naver.com/">ipsum dolor, sit amet consectetur adipisicing elit.</a> Asperiores facere nemo sint, deserunt quam aliquam maxime nostrum saepe quod accusamus laborum assumenda officiis illum tenetur odio sequi ullam ipsum perspiciatis?
+    Aut autem magni fugiat optio deserunt, eius, fugit facilis corrupti magnam modi quibusdam debitis quidem necessitatibus quisquam, consequatur aliquam amet illum nostrum repellat odio repudiandae harum est ipsa maxime. Dolore?
+    Fuga tempora animi quo possimus corrupti beatae eveniet optio in laudantium odit rem, eaque ipsa voluptas, quas repellendus tempore. Perspiciatis numquam delectus, molestiae odio molestias ut aliquam asperiores. Eligendi, neque?
+    Corporis dolore dignissimos quia error quos omnis optio. Facere, laboriosam veniam aut sint eveniet laudantium iste doloribus tenetur in, totam numquam voluptates accusamus sit saepe, at quis distinctio reiciendis expedita.
+    Reprehenderit deserunt quia ut vel vitae,<a href="#">adipisci ipsam quis.</a> At eum earum quam. Dolor accusantium facilis rem quo cum perferendis amet, molestiae, aliquid aliquam quis repudiandae quidem? Eaque, expedita pariatur.</p>
+    <hr>
+    <div class="sample" id="sample" style="background-color: aqua;"> <!-- 태그에 바로 적용하는 inline style, 우선순위 : 1000-->
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis deserunt adipisci officiis similique unde qui sunt quaerat ea possimus officia dolorum expedita aliquam alias dolore rerum cumque aliquid, animi quos.
+    </div>
+</body>
+</body>
+</html>

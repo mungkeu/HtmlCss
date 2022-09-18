@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>css selector2</title>
+    <style>
+        /* 만일 링크에 스타일을 쓴다면 아래의 순서대로 사용하는것이 좋다.
+        link -> visited -> hover -> active -> focus
+        */
+        a:link{ /* 링크가 걸려있는 a태그라면*/
+            color: green;
+            text-decoration: underline;
+        }
+        a:visited{ /* 방문한적이 있는 링크라면 */
+            color:gray;
+            text-decoration: underline;
+        }
+        a:hover{ /* 마우스가 올라가면 */
+            color:red;
+            text-decoration: underline;
+        }
+        a:active{ /* 눌렀을 때 */
+            color:orange;
+            text-decoration: underline;
+        }
+        a:focus{ /* 탭키로 해당 링크로 이동할 경우 */
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<h1>css selector</h1>
+<p><a href="http://naver.com/">ipsum dolor, sit amet consectetur adipisicing elit.</a> Asperiores facere nemo sint, deserunt quam aliquam maxime nostrum saepe quod accusamus laborum assumenda officiis illum tenetur odio sequi ullam ipsum perspiciatis?
+Aut autem magni fugiat optio deserunt, eius, fugit facilis corrupti magnam modi quibusdam debitis quidem necessitatibus quisquam, consequatur aliquam amet illum nostrum repellat odio repudiandae harum est ipsa maxime. Dolore?
+Fuga tempora animi quo possimus corrupti beatae eveniet optio in laudantium odit rem, eaque ipsa voluptas, quas repellendus tempore. Perspiciatis numquam delectus, molestiae odio molestias ut aliquam asperiores. Eligendi, neque?
+Corporis dolore dignissimos quia error quos omnis optio. Facere, laboriosam veniam aut sint eveniet laudantium iste doloribus tenetur in, totam numquam voluptates accusamus sit saepe, at quis distinctio reiciendis expedita.
+Reprehenderit deserunt quia ut vel vitae,<a href="#">adipisci ipsam quis.</a> At eum earum quam. Dolor accusantium facilis rem quo cum perferendis amet, molestiae, aliquid aliquam quis repudiandae quidem? Eaque, expedita pariatur.</p>
+</body>
+</html>
