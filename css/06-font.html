@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>font / text</title>
+    <style>
+        body,h1,h2{
+            /* font-family: '돋움',dotum,Helvetica,sans-serif;  */
+            font-family: 'Malgum Gothic', Helvetica, sans-serif;
+            font-size:12px;
+        }
+        h1{
+            /* 기본적으로 모든 사이즈를 같게 주고 이렇게 특정 태그만 사이즈를 조절한다.*/
+            font-size:2.4em; /* 기본 글씨체의 2.4배 */
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            background-color: green;
+        }
+        h1 small{
+            background-color: lime;
+            font-size: .5em;
+            vertical-align: baseline;
+        }
+        h2{
+            color: #ff0000;
+            font-size: 2em;
+            font-variant: small-caps;
+            text-decoration: line-through;
+        }
+        address{
+            font-style: oblique;
+        }
+        .lead{
+            font-size:1.2em;
+            font-weight: bold;
+            word-spacing: 1em;
+        }
+        .text{
+            text-align: center;
+            /* left | center | right | justify*/
+            line-height: 1.6;
+            text-indent: 1em;
+            /* white-space : nowrap; */
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <h1>style example <small>sample</small></h1>
+    <h2>Style Example (font-variant)</h2>
+    <p class="lead">Lorem ipsum dolor sit amet.</p>
+    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quas voluptas sapiente fugit impedit, 
+        iste sunt! Porro, optio praesentium? Animi, facere dolores? Praesentium, consequatur laudantium maiores, 
+        itaque eveniet molestiae harum hic deleniti quo sint, libero dolor minima. Cupiditate ipsum quae dignissimos 
+        repudiandae quibusdam, exercitationem ullam soluta id alias sunt, earum, similique minima in fugiat eum maxime. 
+        Temporibus quam explicabo quas exercitationem molestias natus fugiat quisquam inventore libero aut eveniet fugit, 
+        praesentium totam debitis voluptatum sunt laborum corporis, ipsum esse repellat. Iure tempora unde non dolore quo 
+        quibusdam tenetur necessitatibus iusto consequuntur, explicabo rem corrupti fugit beatae quam maxime placeat minima.</p>
+    <hr>
+    <address>add : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus hic nisi! Non asperiores hic, ipsa beatae deserunt laudantium quo quidem iste consequuntur doloribus, aspernatur ullam vero, ducimus voluptatibus sunt?</address>
+</div>
+</body>
+</html>
+<!--
+    font-family(서체)
+    - 한글은 ' '로 감싼다.
+    - 한글 돋움이 없을 수도 있으므로 영어 dotum을 추가한다.
+    - 맥에는 둘 다 없을 수 있으니 Helvetica를 추가한다.
+    - 그마저도 없으면 여러가지 sans-serif 서체중에 하나가 출력된다.
+
+    여러 서체중에 꼭 알아 둘만한 것들
+    - serif         :   명조
+    - sans-serif    :   고딕
+    - cursive       :   필기
+    - monospace     :   고정폭
+
+    font-size
+    - 폰트의 사이즈
+
+    font-weight
+    - 폰트의 굵기
+    - bold   : 두껍게
+    - bolder : 더 두껍게
+    - normal : 기본, 가늘게 나온다.
+    - lighter : 더 가늘게 나온다.
+    - 아래 친구들은 다 똑같이 출력된다. 단 서체중에서 지원되는 서체 ex) 구글폰트와 같은 경우에는 숫자 사이즈가 인식된다.
+    bold | bolder | 600 | 700 | 800 | 900 
+    normal | lighter | 100 | 200 | 300 | 400 
+
+    font-style
+    - 폰트의 스타일을 지정한다.
+    - normal : 기본 스타일로 지정한다.
+    - italic : 기울어진다.
+    - oblique : 기울어진다. 마찬가지로 이탤릭이나 이거나 같지만, 서체중에 지원되는 서체가 있다. ex) 구글폰트
+
+    font-variant
+    - font-variant : 대문자의 스타일로 모든 문자가 바뀌지만 대 소문자의 크기 차이는 유지한다. 그 형태는 유지
+
+    letter-spacing
+    - 글자의 간격
+
+    color
+    - 글자의 색상
+
+    line-height
+    - 줄 간격
+
+    word-spacing
+    - 띄어쓰기의 줄 간격을 조정
+
+    text-align
+    - 텍스트 정렬
+    - left : 왼쪽 정렬
+    - center : 가운데 정렬
+    - right : 오른쪽 정렬
+    - justify : 양쪽 정렬
+
+    text-decoration
+    - 텍스트 선
+    line-through : 취소 선
+    underline : 밑 줄
+    overline : 윗 줄
+    none : 선을 없앤다.
+
+    text-indent
+    - 들여쓰기
+
+    text-transform
+    - uppercase : 대문자
+    - lowercase : 소문자
+    - capitalize : 첫 글자만 대문자
+
+    vertical-align
+    - 위 아래 정렬
+    - top : 위
+    - middle : 중간 
+    - baseline : 기준점
+    - bottom : 아래
+    px 값으로도 지정가능.
+
+    white-space
+    - nowrap : 줄바꿈이 안되어서 쭉 옆으로 나간다.
+-->
